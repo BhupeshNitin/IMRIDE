@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="46849" started-at="2019-01-23T12:27:40Z" finished-at="2019-01-23T12:28:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="46849" started-at="2019-01-23T12:27:40Z" finished-at="2019-01-23T12:28:27Z">
+      <class name="UITestCases.TC1">
+        <test-method status="PASS" signature="set_up(java.lang.String)[pri:0, instance:UITestCases.TC1@369f73a2]" name="set_up" is-config="true" duration-ms="0" started-at="2019-01-23T12:27:40Z" finished-at="2019-01-23T12:27:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/Utilities/Capability.properties]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set_up -->
+        <test-method status="PASS" signature="launch_app()[pri:0, instance:UITestCases.TC1@369f73a2]" name="launch_app" is-config="true" duration-ms="32609" started-at="2019-01-23T12:27:40Z" finished-at="2019-01-23T12:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_app -->
+        <test-method status="PASS" signature="OTP_Verification()[pri:0, instance:UITestCases.TC1@369f73a2]" name="OTP_Verification" duration-ms="0" started-at="2019-01-23T12:28:13Z" finished-at="2019-01-23T12:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OTP_Verification -->
+        <test-method status="PASS" signature="Verify_Home_Page_Ui()[pri:0, instance:UITestCases.TC1@369f73a2]" name="Verify_Home_Page_Ui" duration-ms="13975" started-at="2019-01-23T12:28:13Z" finished-at="2019-01-23T12:28:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Home_Page_Ui -->
+        <test-method status="PASS" signature="close()[pri:0, instance:UITestCases.TC1@369f73a2]" name="close" is-config="true" duration-ms="250" started-at="2019-01-23T12:28:27Z" finished-at="2019-01-23T12:28:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- UITestCases.TC1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
