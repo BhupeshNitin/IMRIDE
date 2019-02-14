@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" ignored="2" total="8" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46849" started-at="2019-01-23T12:27:40Z" finished-at="2019-01-23T12:28:27Z">
+  <suite name="Default suite" duration-ms="103583" started-at="2019-02-12T10:59:57Z" finished-at="2019-02-12T11:01:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46849" started-at="2019-01-23T12:27:40Z" finished-at="2019-01-23T12:28:27Z">
-      <class name="UITestCases.TC1">
-        <test-method status="PASS" signature="set_up(java.lang.String)[pri:0, instance:UITestCases.TC1@369f73a2]" name="set_up" is-config="true" duration-ms="0" started-at="2019-01-23T12:27:40Z" finished-at="2019-01-23T12:27:40Z">
+    <test name="Default test" duration-ms="103583" started-at="2019-02-12T10:59:57Z" finished-at="2019-02-12T11:01:40Z">
+      <class name="UITestCases.TC_HomeScreenUI">
+        <test-method status="PASS" signature="set_up(java.lang.String)[pri:0, instance:UITestCases.TC_HomeScreenUI@369f73a2]" name="set_up" is-config="true" duration-ms="10" started-at="2019-02-12T10:59:57Z" finished-at="2019-02-12T10:59:57Z">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,113 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set_up -->
-        <test-method status="PASS" signature="launch_app()[pri:0, instance:UITestCases.TC1@369f73a2]" name="launch_app" is-config="true" duration-ms="32609" started-at="2019-01-23T12:27:40Z" finished-at="2019-01-23T12:28:13Z">
+        <test-method status="PASS" signature="launch_app()[pri:0, instance:UITestCases.TC_HomeScreenUI@369f73a2]" name="launch_app" is-config="true" duration-ms="78256" started-at="2019-02-12T10:59:57Z" finished-at="2019-02-12T11:01:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch_app -->
-        <test-method status="PASS" signature="OTP_Verification()[pri:0, instance:UITestCases.TC1@369f73a2]" name="OTP_Verification" duration-ms="0" started-at="2019-01-23T12:28:13Z" finished-at="2019-01-23T12:28:13Z">
+        <test-method status="PASS" signature="verify_WelcomeText()[pri:2, instance:UITestCases.TC_HomeScreenUI@369f73a2]" name="verify_WelcomeText" duration-ms="3743" started-at="2019-02-12T11:01:15Z" finished-at="2019-02-12T11:01:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OTP_Verification -->
-        <test-method status="PASS" signature="Verify_Home_Page_Ui()[pri:0, instance:UITestCases.TC1@369f73a2]" name="Verify_Home_Page_Ui" duration-ms="13975" started-at="2019-01-23T12:28:13Z" finished-at="2019-01-23T12:28:27Z">
+        </test-method> <!-- verify_WelcomeText -->
+        <test-method status="PASS" signature="verify_homepageButtontext()[pri:4, instance:UITestCases.TC_HomeScreenUI@369f73a2]" name="verify_homepageButtontext" duration-ms="347" started-at="2019-02-12T11:01:19Z" finished-at="2019-02-12T11:01:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Home_Page_Ui -->
-        <test-method status="PASS" signature="close()[pri:0, instance:UITestCases.TC1@369f73a2]" name="close" is-config="true" duration-ms="250" started-at="2019-01-23T12:28:27Z" finished-at="2019-01-23T12:28:27Z">
+        </test-method> <!-- verify_homepageButtontext -->
+        <test-method status="PASS" signature="verify_Login()[pri:5, instance:UITestCases.TC_HomeScreenUI@369f73a2]" name="verify_Login" duration-ms="12749" started-at="2019-02-12T11:01:19Z" finished-at="2019-02-12T11:01:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- UITestCases.TC1 -->
+        </test-method> <!-- verify_Login -->
+        <test-method status="FAIL" signature="verify_VerificationCodeScreenUI()[pri:5, instance:UITestCases.TC_HomeScreenUI@369f73a2]" name="verify_VerificationCodeScreenUI" duration-ms="275" started-at="2019-02-12T11:01:32Z" finished-at="2019-02-12T11:01:32Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+this is soft assertion expected [RESEND CODE] but found [RESEND CODE]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+this is soft assertion expected [RESEND CODE] but found [RESEND CODE]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at UITestCases.TC_HomeScreenUI.verify_VerificationCodeScreenUI(TC_HomeScreenUI.java:74)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_VerificationCodeScreenUI -->
+        <test-method status="FAIL" signature="verify_VerificationCodetext()[pri:6, instance:UITestCases.TC_HomeScreenUI@369f73a2]" name="verify_VerificationCodetext" duration-ms="287" started-at="2019-02-12T11:01:32Z" finished-at="2019-02-12T11:01:33Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+this is soft assertion expected [RESEND CODE] but found [RESEND CODE],
+this is soft assertion expected [RESEND CODE] but found [RESEND CODE]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+this is soft assertion expected [RESEND CODE] but found [RESEND CODE],
+this is soft assertion expected [RESEND CODE] but found [RESEND CODE]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at UITestCases.TC_HomeScreenUI.verify_VerificationCodetext(TC_HomeScreenUI.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_VerificationCodetext -->
+        <test-method status="PASS" signature="verify_VerificationCodeScreen()[pri:7, instance:UITestCases.TC_HomeScreenUI@369f73a2]" name="verify_VerificationCodeScreen" duration-ms="7907" started-at="2019-02-12T11:01:33Z" finished-at="2019-02-12T11:01:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_VerificationCodeScreen -->
+      </class> <!-- UITestCases.TC_HomeScreenUI -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

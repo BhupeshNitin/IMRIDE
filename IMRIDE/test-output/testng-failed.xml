@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="UITestCases.TC1">
+      <class name="UITestCases.TC_HomeScreenUI">
         <methods>
           <include name="launch_app"/>
-          <include name="close"/>
+          <include name="verify_VerificationCodetext"/>
           <include name="set_up"/>
-          <include name="Verify_Home_Page_Ui"/>
+          <include name="verify_VerificationCodeScreenUI"/>
         </methods>
-      </class> <!-- UITestCases.TC1 -->
+      </class> <!-- UITestCases.TC_HomeScreenUI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

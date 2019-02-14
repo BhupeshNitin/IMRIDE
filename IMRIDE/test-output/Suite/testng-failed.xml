@@ -6,8 +6,9 @@
       <class name="UITestCases.TC1">
         <methods>
           <include name="launch_app"/>
+          <include name="close"/>
+          <include name="OTP_Verification"/>
           <include name="set_up"/>
-          <include name="Verify_Home_Page_Ui"/>
         </methods>
       </class> <!-- UITestCases.TC1 -->
     </classes>

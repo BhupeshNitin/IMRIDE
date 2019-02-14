@@ -8,11 +8,11 @@ import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import org.testng.asserts.SoftAssert;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -22,6 +22,7 @@ public class BaseClass
 {
 	public Properties ps;	
 	public AppiumDriver<MobileElement> driver;
+	public SoftAssert softAssert;
 	
 	@BeforeSuite
 	@Parameters("cofig_file")
@@ -53,17 +54,17 @@ public class BaseClass
 		caps.setCapability("resetKeyboard", true);
 		caps.setCapability("autoGrantPermissions","true");
 		driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), caps);
-		
+		softAssert = new SoftAssert();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		
 		
     }
 
-	@AfterClass
+	/*@AfterClass
 	public void close()
 	{
 		driver.closeApp();
-	}
+	}*/
 	
 }
