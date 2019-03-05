@@ -12,12 +12,11 @@ import io.appium.java_client.MobileElement;
 
 public class TC_HomeScreenUI extends BaseClass
 {
-	@Test(priority=1,enabled=false)
+	@Test(priority=1)
 	public void verify_homepageLogo()
 	{
-		// Need to work on this point
 	}
-	@Test(priority=2)
+	@Test(priority=2,enabled=false)
 	public void verify_WelcomeText()
 	{
 		MobileElement welcometext = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[1]"));
@@ -37,7 +36,7 @@ public class TC_HomeScreenUI extends BaseClass
 		softAssert.assertAll();
 	}
 	
-	@Test(priority=4)
+	@Test(priority=4,enabled=false)
 	public void verify_homepageButtontext()
 	{
 		 MobileElement button = driver.findElement(By.id("com.activescaler.imride:id/frag_phone_continue_bt"));
@@ -47,7 +46,7 @@ public class TC_HomeScreenUI extends BaseClass
 		 softAssert.assertEquals(buttonActualtext, buttonExpectedtext);
 		 softAssert.assertAll();
 	}
-	@Test(priority=5)
+	@Test(priority=5,enabled=false)
 	public void verify_Login() throws Exception
 	{
 		try
@@ -64,7 +63,7 @@ public class TC_HomeScreenUI extends BaseClass
 			ScreenShot.take_screenshot(driver);
 		}
 	}
-	@Test(priority=5)
+	@Test(priority=5,enabled=false)
 	public void verify_VerificationCodeScreenUI() throws Exception
 	{
 		MobileElement resendbutton = driver.findElement(By.id("com.activescaler.imride:id/frag_phone_veri_resend_bt"));
@@ -73,7 +72,7 @@ public class TC_HomeScreenUI extends BaseClass
 		softAssert.assertEquals(Actualtext, Expectedtext,"this is soft assertion");
 		softAssert.assertAll();	
 	}
-	@Test(priority=6)
+	@Test(priority=6,enabled=false)
 	public void verify_VerificationCodetext() throws Exception
 	{
 		MobileElement resendbutton = driver.findElement(By.id("com.activescaler.imride:id/frag_phone_veri_resend_bt"));
@@ -84,7 +83,7 @@ public class TC_HomeScreenUI extends BaseClass
 	}
 	
 	
-	@Test(priority=7)
+	@Test(priority=7,enabled=false)
 	public void verify_VerificationCodeScreen() throws Exception
 	{
 		try

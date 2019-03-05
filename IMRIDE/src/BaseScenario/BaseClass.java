@@ -13,16 +13,22 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
-
+import AppiumCommanClasses.Scrolling;
+import Utilities.ScrollELement;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
+
 
 public class BaseClass 
 {
 	public Properties ps;	
 	public AppiumDriver<MobileElement> driver;
 	public SoftAssert softAssert;
+	public Scrolling scroll;
+	public 	ScrollELement se;
+
+	
 	
 	@BeforeSuite
 	@Parameters("cofig_file")
@@ -55,6 +61,7 @@ public class BaseClass
 		caps.setCapability("autoGrantPermissions","true");
 		driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), caps);
 		softAssert = new SoftAssert();
+		scroll = new Scrolling(driver);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		

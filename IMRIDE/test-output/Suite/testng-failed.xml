@@ -3,14 +3,26 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="UITestCases.TC1">
+      <class name="UITestCases.TC_VerificationScreenUI">
         <methods>
           <include name="launch_app"/>
-          <include name="close"/>
-          <include name="OTP_Verification"/>
+          <include name="EnterNumber"/>
+          <include name="verify_profile"/>
+          <include name="search_source"/>
+          <include name="search_destination"/>
           <include name="set_up"/>
+          <include name="whyareyoutravelling"/>
+          <include name="booktrip"/>
+          <include name="add_travler"/>
+          <include name="select_trip"/>
+          <include name="EnterCode"/>
+          <include name="search"/>
+          <include name="search_selecttime"/>
+          <include name="VerifyNumber"/>
+          <include name="add_payment"/>
+          <include name="CreateProfile"/>
         </methods>
-      </class> <!-- UITestCases.TC1 -->
+      </class> <!-- UITestCases.TC_VerificationScreenUI -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
